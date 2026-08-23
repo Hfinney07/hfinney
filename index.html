@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RISE Creative Media — Marketing Agency</title>
-<meta name="description" content="RISE Creative Media is a marketing agency helping brands grow through strategy, content, and creative storytelling.">
+<title>RISE Creative Media — Meta Ads for Landscaping Companies</title>
+<meta name="description" content="RISE Creative Media runs Meta ad campaigns exclusively for landscaping companies — with weekly performance reports and a monthly strategy call with the owner.">
+<meta name="theme-color" content="#14140f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2314140f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' fill='%23f7f4ee' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,7 +14,9 @@
 </head>
 <body>
 
-<header class="site-header">
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a href="#home" class="logo-mark" aria-label="RISE Creative Media home">
       <span class="logo-rise">RISE</span>
@@ -26,9 +30,11 @@
 
     <nav class="main-nav" id="mainNav">
       <a href="#services">Services</a>
-      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#results">Results</a>
       <a href="#about">About</a>
-      <a href="#contact" class="nav-cta">Contact</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Book a Call</a>
     </nav>
   </div>
 </header>
@@ -36,160 +42,336 @@
 <main>
 
   <section id="home" class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <p class="eyebrow">Marketing &amp; Creative Agency</p>
-      <h1>We build brands<br>people <em>rise</em> for.</h1>
-      <p class="hero-sub">RISE Creative Media partners with ambitious businesses on strategy, content, and campaigns that turn attention into growth.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Start a project</a>
-        <a href="#work" class="btn btn-ghost">See our work</a>
+      <p class="eyebrow reveal">Meta Ads for Landscaping Companies</p>
+      <h1 class="reveal" style="--delay:0.08s">More leads.<br>Fuller schedules.<br><em>Real</em> growth.</h1>
+      <p class="hero-sub reveal" style="--delay:0.16s">RISE Creative Media builds and manages Facebook &amp; Instagram ad campaigns exclusively for landscaping companies — backed by weekly reports and a monthly strategy call directly with the owner.</p>
+      <div class="hero-actions reveal" style="--delay:0.24s">
+        <a href="#contact" class="btn btn-primary">Book a Free Strategy Call</a>
+        <a href="#process" class="btn btn-ghost">See How It Works</a>
+      </div>
+
+      <div class="hero-stats reveal" style="--delay:0.32s">
+        <div class="hero-stat">
+          <span class="stat-num" data-count="3.4" data-decimals="1" data-suffix="x">0x</span>
+          <span class="stat-label">Avg. increase in qualified leads</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num" data-count="21" data-prefix="$">$0</span>
+          <span class="stat-label">Avg. cost per lead</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num" data-count="100" data-suffix="%">0%</span>
+          <span class="stat-label">Accounts run directly by the owner</span>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="logos-strip">
-    <div class="container">
-      <p>Trusted by growing brands</p>
-      <div class="logos-row">
-        <span>NORTHFIELD &amp; CO.</span>
-        <span>AURELIA</span>
-        <span>HARBOR STUDIO</span>
-        <span>MERIDIAN</span>
-        <span>SOL &amp; PINE</span>
+    <p class="marquee-label">Built for landscaping &amp; outdoor service companies</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Evergreen Outdoor Co.</span>
+        <span>Summit Lawn &amp; Design</span>
+        <span>Green Acres Landscaping</span>
+        <span>Cedar Ridge Landcare</span>
+        <span>Bluestone Outdoor Living</span>
+        <span>Evergreen Outdoor Co.</span>
+        <span>Summit Lawn &amp; Design</span>
+        <span>Green Acres Landscaping</span>
+        <span>Cedar Ridge Landcare</span>
+        <span>Bluestone Outdoor Living</span>
       </div>
     </div>
   </section>
 
   <section id="services" class="services">
     <div class="container">
-      <p class="eyebrow center">What We Do</p>
-      <h2 class="section-title center">Services built to move the needle</h2>
+      <p class="eyebrow center reveal">What We Do</p>
+      <h2 class="section-title center reveal">Everything you need to keep the phone ringing</h2>
 
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card reveal">
           <span class="service-num">01</span>
-          <h3>Brand Strategy</h3>
-          <p>Positioning, messaging, and identity work that gives your brand a clear point of view.</p>
+          <h3>Meta Ads Management</h3>
+          <p>Facebook &amp; Instagram campaigns built, launched, and optimized specifically for landscaping and outdoor service businesses.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal" style="--delay:0.06s">
           <span class="service-num">02</span>
-          <h3>Social &amp; Content</h3>
-          <p>Content systems and social campaigns that keep your audience engaged, on every channel.</p>
+          <h3>High-Converting Landing Pages</h3>
+          <p>Mobile-first pages designed to turn ad clicks into booked estimates, not just form fills.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal" style="--delay:0.12s">
           <span class="service-num">03</span>
-          <h3>Paid Media</h3>
-          <p>Data-driven ad campaigns across search, social, and display designed to convert.</p>
+          <h3>Weekly Performance Reports</h3>
+          <p>A clear, jargon-free report every week showing leads, spend, and cost per lead — no logging into ad dashboards required.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal" style="--delay:0.18s">
           <span class="service-num">04</span>
-          <h3>Web &amp; Design</h3>
-          <p>Websites and visual design that make a strong first impression and drive action.</p>
+          <h3>Monthly Strategy Call</h3>
+          <p>A standing call each month directly with the owner to review results, budget, and what's next — never a rotating account rep.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal" style="--delay:0.24s">
           <span class="service-num">05</span>
-          <h3>SEO &amp; Growth</h3>
-          <p>Organic search strategy and analytics that compound your visibility over time.</p>
+          <h3>Ad Creative &amp; Copy</h3>
+          <p>Scroll-stopping photo, video, and copy built around your services, service area, and busy season.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal" style="--delay:0.3s">
           <span class="service-num">06</span>
-          <h3>Email &amp; CRM</h3>
-          <p>Lifecycle campaigns and automation that nurture leads into loyal customers.</p>
+          <h3>Lead Follow-Up &amp; Retargeting</h3>
+          <p>Automated retargeting and follow-up so fewer leads go cold before your team can call them back.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="work" class="work">
+  <section id="process" class="process">
     <div class="container">
-      <p class="eyebrow center">Selected Work</p>
-      <h2 class="section-title center">Recent projects</h2>
+      <p class="eyebrow center reveal">How It Works</p>
+      <h2 class="section-title center reveal">A simple, transparent process</h2>
+
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"><span class="timeline-line-fill"></span></div>
+
+        <div class="timeline-step reveal">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-content">
+            <h3>Audit &amp; Strategy</h3>
+            <p>We review your service area, competitors, and past ad performance to build a Meta ad strategy built for landscaping demand cycles.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal" style="--delay:0.1s">
+          <div class="timeline-marker">02</div>
+          <div class="timeline-content">
+            <h3>Launch &amp; Optimize</h3>
+            <p>We launch, test, and refine Facebook &amp; Instagram campaigns targeting homeowners in your area who are ready to hire.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal" style="--delay:0.2s">
+          <div class="timeline-marker">03</div>
+          <div class="timeline-content">
+            <h3>Weekly Reports</h3>
+            <p>Every week, you get a straightforward report on leads, spend, and cost per lead — delivered before you even have to ask.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal" style="--delay:0.3s">
+          <div class="timeline-marker">04</div>
+          <div class="timeline-content">
+            <h3>Monthly Call with the Owner</h3>
+            <p>Once a month, you get on a call directly with the owner of RISE to review performance and plan the next month together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" class="work">
+    <div class="container">
+      <p class="eyebrow center reveal">Results</p>
+      <h2 class="section-title center reveal">Real numbers from real landscaping clients</h2>
 
       <div class="work-grid">
-        <article class="work-card">
+        <article class="work-card reveal">
           <div class="work-thumb work-thumb-1"></div>
-          <h3>Northfield &amp; Co.</h3>
-          <p>Full rebrand and social launch campaign</p>
+          <span class="work-stat" data-count="142" data-suffix="%">0%</span>
+          <h3>Evergreen Outdoor Co.</h3>
+          <p>Increase in qualified leads within 60 days of launch</p>
         </article>
-        <article class="work-card">
+        <article class="work-card reveal" style="--delay:0.1s">
           <div class="work-thumb work-thumb-2"></div>
-          <h3>Aurelia</h3>
-          <p>Paid media strategy &amp; growth campaign</p>
+          <span class="work-stat" data-count="21" data-prefix="$">$0</span>
+          <h3>Summit Lawn &amp; Design</h3>
+          <p>Average cost per lead across active service area campaigns</p>
         </article>
-        <article class="work-card">
+        <article class="work-card reveal" style="--delay:0.2s">
           <div class="work-thumb work-thumb-3"></div>
-          <h3>Harbor Studio</h3>
-          <p>Website redesign &amp; content strategy</p>
+          <span class="work-stat" data-count="3.8" data-decimals="1" data-suffix="x">0x</span>
+          <h3>Green Acres Landscaping</h3>
+          <p>Return on ad spend across their spring &amp; summer campaigns</p>
         </article>
       </div>
+      <p class="results-note reveal">Illustrative results based on current client campaigns. Actual performance varies by market, budget, and season.</p>
     </div>
   </section>
 
   <section id="about" class="about">
     <div class="container about-inner">
-      <div class="about-text">
+      <div class="about-text reveal">
         <p class="eyebrow">About RISE</p>
-        <h2 class="section-title">A small team, big on results</h2>
-        <p>RISE Creative Media is an independent marketing agency built for brands that want a true partner, not just a vendor. We combine strategic thinking with hands-on creative execution to help our clients rise above the noise.</p>
-        <p>From startups finding their voice to established businesses ready to scale, we tailor every engagement to the goals that matter most to you.</p>
+        <h2 class="section-title">Built for landscaping companies, not everyone</h2>
+        <p>RISE Creative Media only works with landscaping and outdoor service companies — so every strategy, ad, and report is built around how your business actually earns customers, season by season.</p>
+        <p>You're never handed off to a junior account manager. Every client gets weekly reports and a monthly strategy call directly with the owner, so nothing gets lost in translation.</p>
         <div class="about-stats">
           <div>
-            <span class="stat-num">40+</span>
-            <span class="stat-label">Brands launched</span>
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Landscaping-focused</span>
           </div>
           <div>
-            <span class="stat-num">6</span>
-            <span class="stat-label">Years in business</span>
+            <span class="stat-num">Weekly</span>
+            <span class="stat-label">Performance reports</span>
           </div>
           <div>
-            <span class="stat-num">92%</span>
-            <span class="stat-label">Client retention</span>
+            <span class="stat-num">Direct</span>
+            <span class="stat-label">Access to the owner</span>
           </div>
         </div>
       </div>
-      <div class="about-visual" aria-hidden="true"></div>
+      <div class="about-visual reveal" style="--delay:0.15s" aria-hidden="true"></div>
     </div>
   </section>
 
   <section class="testimonial">
     <div class="container">
-      <blockquote>
-        &ldquo;RISE didn&rsquo;t just run our campaigns &mdash; they understood our business and helped us find an audience we didn&rsquo;t know we had.&rdquo;
-      </blockquote>
-      <p class="testimonial-author">— Founder, Sol &amp; Pine</p>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <blockquote class="testimonial-slide is-active">
+          <p>&ldquo;Before RISE we were relying on word of mouth and had no idea if our ads were even working. Now I get a report every Monday and a call every month with the actual owner — not a rotating account rep.&rdquo;</p>
+          <cite>— Owner, Evergreen Outdoor Co.</cite>
+        </blockquote>
+        <blockquote class="testimonial-slide">
+          <p>&ldquo;We went from guessing at our ad budget to knowing exactly what we spent, what we got back, and why. The monthly calls keep us honest about what's actually working.&rdquo;</p>
+          <cite>— Owner, Summit Lawn &amp; Design</cite>
+        </blockquote>
+        <blockquote class="testimonial-slide">
+          <p>&ldquo;Our crews stayed booked through the shoulder season for the first time in years. That came directly from the campaigns RISE ran for us.&rdquo;</p>
+          <cite>— Owner, Green Acres Landscaping</cite>
+        </blockquote>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots" role="tablist" aria-label="Testimonials"></div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <p class="eyebrow center reveal">Frequently Asked</p>
+      <h2 class="section-title center reveal">Questions landscaping owners ask us</h2>
+
+      <div class="accordion">
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Do you manage my ad budget, or just the ads themselves?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>We manage the strategy, creative, and day-to-day optimization of your campaigns. Your ad spend goes directly to Meta and is billed separately from our management fee, so you always know exactly where every dollar goes.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>How fast will I start seeing leads?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Most campaigns go live within the first week, with initial leads typically arriving in the first 7-14 days. We use the first few weeks to test and refine targeting before scaling what's working.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Is there a contract, or can I cancel anytime?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>We work month-to-month. If RISE isn't earning its keep, you're free to walk away at any time — we'd rather earn your business every month than lock you into a long-term agreement.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Will you work with another landscaping company in my area?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>No. We limit ourselves to one landscaping client per service area so your campaigns are never competing against another RISE client for the same customers.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>What's included in the weekly report?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Leads generated, ad spend, cost per lead, and top-performing campaigns — written in plain English, delivered every week, with no dashboard login required.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Do I need my own website or landing page already?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Not necessarily. We can build a dedicated landing page for your campaigns, or optimize your existing site so it's ready to convert ad traffic into booked estimates.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <div class="container contact-inner">
-      <div class="contact-text">
+      <div class="contact-text reveal">
         <p class="eyebrow">Get In Touch</p>
-        <h2 class="section-title">Ready to rise?</h2>
-        <p>Tell us a bit about your brand and what you're looking to achieve. We'll follow up within one business day.</p>
+        <h2 class="section-title">Ready to fill your schedule?</h2>
+        <p>Book a free 15-minute strategy call. We'll look at your service area and current marketing, and tell you honestly whether we're a fit — no pressure, no obligation.</p>
+
+        <ol class="next-steps">
+          <li><span>1</span> Tell us about your business below</li>
+          <li><span>2</span> 15-minute call with the owner</li>
+          <li><span>3</span> Walk away with a custom growth plan</li>
+        </ol>
+
         <ul class="contact-details">
           <li><strong>Email</strong><a href="mailto:hello@risecreativemedia.com">hello@risecreativemedia.com</a></li>
           <li><strong>Phone</strong><a href="tel:+15551234567">(555) 123-4567</a></li>
         </ul>
       </div>
 
-      <form class="contact-form" id="contactForm">
+      <form class="contact-form reveal" style="--delay:0.1s" id="contactForm">
         <div class="form-row">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
         </div>
         <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <label for="company">Business Name</label>
+          <input type="text" id="company" name="company" required>
+        </div>
+        <div class="form-row-split">
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
         </div>
         <div class="form-row">
-          <label for="company">Company</label>
-          <input type="text" id="company" name="company">
+          <label for="area">Service Area (City/Region)</label>
+          <input type="text" id="area" name="area">
         </div>
         <div class="form-row">
-          <label for="message">Tell us about your project</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="budget">Monthly Ad Budget</label>
+          <select id="budget" name="budget">
+            <option value="">Select a range</option>
+            <option value="under-1k">Under $1,000</option>
+            <option value="1k-3k">$1,000 – $3,000</option>
+            <option value="3k-5k">$3,000 – $5,000</option>
+            <option value="5k-plus">$5,000+</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        <div class="form-row">
+          <label for="message">Anything else we should know?</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Book My Free Strategy Call</button>
         <p class="form-note" id="formNote" role="status"></p>
       </form>
     </div>
@@ -206,8 +388,9 @@
     </a>
     <nav class="footer-nav">
       <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#results">Results</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
     <p class="footer-copy">&copy; <span id="year"></span> RISE Creative Media. All rights reserved.</p>
